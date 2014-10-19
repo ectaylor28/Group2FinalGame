@@ -265,7 +265,7 @@ def execute_look():
         print("\nCongratulations, You won!\n")
         sys.exit(1) 
 
-    os.system('cls')  
+    os.system('clear')  
     print_room(current_room)
     print_inventory_items(inventory)
     print_menu(current_room["exits"], current_room["items"], inventory)

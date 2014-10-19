@@ -80,7 +80,10 @@ def print_inventory_items(items):
     <BLANKLINE>
 
     """
-    print("\nYou have " + list_of_items(items) + ". And they weigh: " + str(calc_mass(items)))
+    if len(items) > 1:
+        print("\nYou have " + list_of_items(items) + ". And they weigh: " + str(calc_mass(items)))
+    else: 
+        print("\nYou don't have any items in your inventory.\n")
     print()
 
 def exit_game():
@@ -253,31 +256,64 @@ def execute_go(direction):
     moving). Otherwise, it prints "You cannot go there."
     """
     global current_room
+    global movement_limit
 
-    if is_valid_exit(current_room["exits"], direction):
-        current_room = move(current_room["exits"], direction)
-        execute_look()
+    if movement_limit > 0:
+        movement_limit -= 1
+        if is_valid_exit(current_room["exits"], direction):
+            current_room = move(current_room["exits"], direction)
+            execute_look()
+        else:
+            print("\nYou cannot go there.\n")
     else:
-        print("\nYou cannot go there.\n")
+        print("\nSorry, You have run out ot moves. Game over!\n")
+        sys.exit(1) 
+
         
 def execute_look():  
     if current_room["name"] == goal_room[1]["name"] and check_for_item(goal_item, current_room["items"]):
         print("\nCongratulations, You won!\n")
         sys.exit(1) 
 
-    os.system('cls')  
+    os.system('clear')  
     print_room(current_room)
     print_inventory_items(inventory)
     print_menu(current_room["exits"], current_room["items"], inventory)
+
+def execute_moves():
+    print("\nYou " + str(movement_limit) + " movements left. Good luck.\n")
     
+def execute_look_at(item_id):
+    boolean = False
+    for index in current_room["items"]:
+        if index["id"] == item_id:
+            print()
+            print(index["name"].upper())
+            print()
+            print(index["description"] + "\n")
+            boolean = True
+
+    for index in inventory:
+        if index["id"] == item_id:
+            print()
+            print(index["name"].upper())
+            print()
+            print(index["description"] + "\n")
+            boolean = True
+
+    if not boolean: 
+        print("\nThere is not such an item here.\n")
+
 
 def execute_task():
     print("\nYou have to bring the " + str(goal_item[0]) + " to " + str(goal_room[1]["name"]) + ".\n")
+
 
 def find_command(command):
     for index in commands:
         if command in index:
             return index[0]
+
 
 def execute_take(item_id):
     """This function takes an item_id as an argument and moves this item from the
@@ -330,10 +366,16 @@ def execute_command(command):
     if len(command) != 0:
         temp = find_command(command[0])
         if temp:
-            if len(command) > 1:
-                function_dict[temp](command[1])
+            if temp == "look":
+                function_dict[temp]()
             elif temp == "inventory":
                 function_dict[temp](inventory)
+            elif temp == "task":
+                function_dict[temp]()
+            elif temp == "moves":
+                function_dict[temp]()
+            elif len(command) > 1:
+                function_dict[temp](command[1])
             else:
                 function_dict[temp]()
         else:

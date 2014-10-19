@@ -32,7 +32,7 @@ room_closet = {
 
     "exits": {"east": "Cellar"},
 
-    "items": [item_whiskey]
+    "items": []
 }
 
 room_sitting = {
@@ -66,7 +66,7 @@ room_kitchen = {
 
     "exits": {"south": "Entrance", "north": "Vegetable"},
 
-    "items": [item_knife]
+    "items": []
 }
 
 room_vegetable = {

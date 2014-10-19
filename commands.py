@@ -7,6 +7,8 @@ commands_for_inventory = ["inventory", "inv"]
 commands_for_exit = ["exit", "quit", "q", "bye"]
 commands_for_task = ["task"]
 commands_for_look = ["look"]
+commands_for_look_at = ["lookat", "examine"]
+commands_for_moves = ["moves"]
 
 commands = [
 	commands_for_go,
@@ -15,7 +17,9 @@ commands = [
 	commands_for_inventory,
 	commands_for_exit,
 	commands_for_look,
-	commands_for_task
+	commands_for_look_at,
+	commands_for_task,
+	commands_for_moves
 ]
 
 function_dict = {
@@ -25,5 +29,7 @@ function_dict = {
 	"inventory": print_inventory_items,
 	"exit": exit_game,
 	"task": execute_task,
-	"look": execute_look
+	"look": execute_look,
+	"lookat": execute_look_at,
+	"moves": execute_moves
 }

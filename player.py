@@ -1,14 +1,14 @@
 from items import *
 from map import rooms
 
-inventory = [item_id, item_laptop, item_money]
+inventory = []
 
 # Game goals
 goalr = rooms.copy()
-del goalr["Reception"]
+del goalr["Entrance"]
 goal_room = goalr.popitem()
 goali = items.copy()
 goal_item = goali.popitem()
 
-# Start game at the reception
-current_room = rooms["Reception"]
+# Start game at the entrance hall
+current_room = rooms["Entrance"]

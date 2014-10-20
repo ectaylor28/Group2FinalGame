@@ -1,72 +1,149 @@
-item_id = {
-    "id": "id",
+item_knife = {
+    "id": "knife",
 
     "mass": 60,
 
-    "name": "id card",
+    "name": "a bloody knife",
 
     "description":
-    """You new shiny student ID card. Expires 1 June 2017.
-You wonder why they have printed a suicide hotline number on it?..."""
+    "The knife is old, and you can hardly tell which of the red marks are dust and which are mingled with dried blood. Rumour has it that the master of the house one hundred years ago stabbed his wife and children in a mad rage."
 }
 
-item_laptop = {
-    "id": "laptop",
+item_mirror = {
+    "id": "mirror",
+
+    "mass": 60,
+
+    "name": "a cracked mirror",
+
+    "description":
+    "You stare into the fragmented mirror, seeing your distorted reflection looking back at you. For a moment, you can see another face, but that must just be your imagination."
+    }
+
+item_photo = {
+    "id": "photo",
 
     "mass": 2500,
 
-    "name": "laptop",
+    "name": "an old, faded photograph",
 
     "description":
-    "It has seen better days. At least it has a WiFi card!"
+    "The photograph has a picture of a man in a suit, smiling. It has stains on it and has faded a lot. You turn it around and see some writing, it says, 'Nolite te bastardes carborandorum' which translates to, 'Don’t let the bastard grind you down'"
 }
 
-item_money = {
-    "id": "money",
+item_note = {
+    "id": "note",
 
     "mass": 250,
 
-    "name": "money",
+    "name": "a handwritten note",
 
     "description":
-    "This wad of cash is barely enough to pay your tuition fees."
+    "You look at the note, handwritten in blood on old parchment, but it’s all in Latin. You read all of it without understanding anything apart from 'maleficis'... 'Witches'."
 }
 
-item_biscuits = {
-    "id": "biscuits",
+item_diary = {
+    "id": "diary",
 
     "mass": 500,
 
-    "name": "a pack of biscuits",
+    "name": "a leather-bound diary",
 
-    "description": "A pack of biscuits."
+    "description": "This belonged to the wife that lived here. The husband tried to burn it in the past because he thought that she hid things in it. Although, it seems that there was a page ripped out."
 }
 
-item_pen = {
-    "id": "pen",
+item_coffin = {
+    "id": "coffin",
 
     "mass": 200,
     
-    "name": "a pen",
+    "name": "a child-sized coffin",
 
-    "description": "A basic ballpoint pen."
+    "description": "You pick up the coffin and it feels heavy. As you hold it in your arms, you vaguely feel a kick and can hear crying."
 }
 
-item_handbook = {
-    "id": "handbook",
+item_doll = {
+    "id": "doll",
 
     "mass": 250,
     
-    "name": "a student handbook",
+    "name": "a child's toy doll",
 
-    "description": "This student handbook explains everything. Seriously."
+    "description": "A motionless doll with alabaster skin and perfect ringlets seems to follow you with her glass eyes."
+}
+
+item_musket = {
+    "id": "musket",
+
+    "mass": 250,
+    
+    "name": "a dusty musket",
+
+    "description": "A weapon the father used to use annually when he went hunting with his friend around the country. It's loaded."
+}
+
+item_musicbox = {
+    "id": "musicbox",
+
+    "mass": 250,
+    
+    "name": "a wind-up music box",
+
+    "description": "The music box, when open, plays a sweet lullaby that used to put a baby to sleep. Of course it has no use now, she’s not going to wake up again."
+}
+
+item_dress = {
+    "id": "dress",
+
+    "mass": 250,
+    
+    "name": "a lacy wedding dress",
+
+    "description": "This dress used to be white, but now, mixed with the blood stains and dirt, looks a brownish orange. It has burn marks on the bottom and holes through the torso."
+}
+
+item_plant = {
+    "id": "plant",
+
+    "mass": 250,
+    
+    "name": "a plant",
+
+    "description": "The thin, thorny stem curls around itself to finally have a hanging bud with brown wrinkled petals and black pollen. It looks poisonous."
+}
+
+item_hand = {
+    "id": "hand",
+
+    "mass": 250,
+    
+    "name": "a pickled hand in a jar",
+
+    "description": "A wrinkled human hand. You can see  the veins and tendons move as it twitches ever so slightly."
+}
+
+item_whiskey = {
+    "id": "whiskey",
+
+    "mass": 250,
+    
+    "name": "a flask of whiskey",
+
+    "description": "350ml of Chivas Regal... a tough old blended Scotch and clearly the master's favourite. It helps you confront fear... You could have done with this a few days ago."
 }
 
 items = {
-    "Id": item_id,
-    "Laptop": item_laptop,
-    "Money": item_money,
-    "Biscuits": item_biscuits,
-    "Pen": item_pen,
-    "Handbook": item_handbook
+    "Mirror": item_mirror,
+    "Photo": item_photo,
+    "Note": item_note,
+    "Diary": item_diary,
+    "Coffin": item_coffin,
+    "Doll": item_doll,
+    "Musket": item_musket,
+    "Music Box": item_musicbox,
+    "Dress": item_dress,
+    "Plant": item_plant,
+    "Hand": item_hand,
+    "Whiskey": item_whiskey,
+    "Knife": item_knife
 }

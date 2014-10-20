@@ -1,81 +1,165 @@
 from items import *
 
-room_reception = {
-    "name": "Reception",
+room_entrance = {
+    "name": "Entrance Hall",
 
     "description":
-    """You are in a maze of twisty little passages, all alike.
-Next to you is the School of Computer Science and
-Informatics reception. The receptionist, Matt Strangis,
-seems to be playing an old school text-based adventure
-game on his computer. There are corridors leading to the
-south and east. The exit is to the west.""",
+    """You stand in an old hallway. A draught blows at your ankles from underneath the front door. The windows have no glass in them and the unwelcoming nature of the room hardly encourages you to explore the house any further.""",
 
-    "exits": {"south": "Robs", "east": "Tutor", "west": "Parking"},
+    "exits": {"up": "Landing", "down": "Cellar", "north": "Kitchen", "west": "Sitting", "east": "Dining"},
 
-    "items": [item_biscuits, item_handbook]
+    "items": [item_musicbox]
 }
 
-room_robs = {
-    "name": "Robs' room",
+room_cellar = {
+    "name": "Cellar",
 
     "description":
-    """You are leaning agains the door of the systems managers'
-room. Inside you notice Rob Evans and Rob Davies. They
-ignore you. To the north is the reception.""",
+    """You finally make it down the creaky stairs to the cellar. Some  old-wooden barrels which were used by the family for making homemade wine. After all these years they are still full... of rats and bones.
+""",
 
-    "exits":  {"north": "Reception"},
+    "exits":  {"up": "Entrance", "west": "Closet"},
 
-    "items": []
+    "items": [item_musket]
 }
 
-room_tutor = {
-    "name": "your personal tutor's office",
+room_closet = {
+    "name": "Storage Closet",
 
     "description":
-    """You are in your personal tutor's office. He intently
-stares at his huge monitor, ignoring you completely.
-On the desk you notice a cup of coffee and an empty
-pack of biscuits. The reception is to the west.""",
+    """As you walk in you feel something quickly brush past you. You turn around and see it was a rat. In this room, there aren’t many items, it’s filled cobwebs and what look like small insect hives. But you see blood stains on a shelf next to an empty scythe case.
+""",
 
-    "exits": {"west": "Reception"},
+    "exits": {"east": "Cellar"},
 
-    "items": []
+    "items": [item_whiskey]
 }
 
-room_parking = {
-    "name": "the parking lot",
+room_sitting = {
+    "name": "Sitting Room",
 
     "description":
-    """You are standing in the Queen's Buildings parking lot.
-You can go south to the COMSC reception, or east to the
-general office.""",
+    """The room is almost empty apart from a small wooden chair, slowly rocking back and forth in the corner, in rhythm to the whistling breeze.""",
 
-    "exits": {"east": "Office", "south": "Reception"},
+    "exits": {"east": "Entrance"},
 
-    "items": []
+    "items": [item_photo]
 }
 
-room_office = {
-    "name": "the general office",
+room_dining = {
+    "name": "Dining Room",
 
     "description":
-    """You are standing next to the cashier's till at
-30-36 Newport Road. The cashier looks at you with hope
-in their eyes. If you go west you can return to the
-Queen's Buildings.""",
+    """The remnants of a final meal eaten here are still strewn over the old, mahogany table. Crushed glasses and puddles of spilt red wine make the floor a treacherous place. Watch your step.""",
 
-    "exits": {"west": "Parking"},
+    "exits": {"west": "Entrance"},
 
-    "items": [item_pen]
+    "items": [item_diary]
+}
+
+room_kitchen = {
+    "name": "Kitchen",
+
+    "description":
+    """You look around the dark kitchen. Everything is in disorder, the oven is completely burned out. Ash covers the floor and makes it difficult for you to breathe. But somehow a pot is bubbling on the side, steam curling out of it into the air...
+""",
+
+    "exits": {"south": "Entrance", "north": "Vegetable"},
+
+    "items": [item_knife]
+}
+
+room_vegetable = {
+    "name": "Vegetable Garden",
+
+    "description":
+    """There are many different plants here, all of them dying. But one particular plant stands out, it’s thorny and has a skull on the pot.""",
+
+    "exits": {"south": "Kitchen", "north": "Shed"},
+
+    "items": [item_plant]
+}
+
+room_shed = {
+    "name": "Shed",
+
+    "description":
+    """There is no floor here, the ground is just dirt. In the corner you can see a rusty shovel.""",
+
+    "exits": {"south": "Vegetable"},
+
+    "items": [item_coffin]
+}
+
+room_landing = {
+    "name": "Landing",
+
+    "description":
+    """As you step on to the landing you hear the floor creak and feel the floorboards lower as you put your weight on them, it doesn’t seem very stable. There is a hole in the floor ahead of you. You look down into it and can vaguely see a foot lying at one end at the bottom of the hole.""",
+
+    "exits": {"up": "Attic", "north": "Master", "east": "Spare", "west": "Bathroom", "down": "Entrance"},
+
+    "items": [item_note]
+}
+
+room_attic = {
+    "name": "Attic",
+
+    "description":
+    """You finally make it up the stairs to the attic. Many old goods are in here; most of the books and old clothes are piled in one corner.""",
+
+    "exits": {"down": "Landing"},
+
+    "items": [item_hand]
+}
+
+room_master = {
+    "name": "Master Bedroom",
+
+    "description":
+    """Cobwebs hang in every corner and drape themselves across the bed like a blanket.""",
+
+    "exits": {"south": "Landing"},
+
+    "items": [item_dress]
+}
+
+room_spare = {
+    "name": "Spare",
+
+    "description":
+    """This large, sound proof room was multi-purpose, many things could have been done in here, but it looks like everything that was in here has been removed.""",
+
+    "exits": {"west": "Landing"},
+
+    "items": [item_doll]
+}
+
+room_bath = {
+    "name": "Bathroom",
+
+    "description":
+    """A bloody, cracked mirror is the first thing you see as you enter. The curtains are covered in blood and cut in half while the bath tub is broken. A serious fight must have occurred in here!""",
+
+    "exits": {"east": "Landing"},
+
+    "items": [item_mirror]
 }
 
 
 
 rooms = {
-    "Reception": room_reception,
-    "Robs": room_robs,
-    "Tutor": room_tutor,
-    "Parking": room_parking,
-    "Office": room_office
+    "Entrance": room_entrance,
+    "Cellar": room_cellar,
+    "Closet": room_closet,
+    "Sitting": room_sitting,
+    "Dining": room_dining,
+    "Kitchen": room_kitchen,
+    "Vegetable": room_vegetable,
+    "Shed": room_shed,
+    "Landing": room_landing,
+    "Attic": room_attic,
+    "Master": room_master,
+    "Spare": room_spare,
+    "Bathroom": room_bath
 }

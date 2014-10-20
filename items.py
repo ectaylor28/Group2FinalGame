@@ -1,7 +1,7 @@
 item_knife = {
     "id": "knife",
 
-    "mass": 60,
+    "mass": 500,
 
     "name": "a bloody knife",
 
@@ -12,7 +12,7 @@ item_knife = {
 item_mirror = {
     "id": "mirror",
 
-    "mass": 60,
+    "mass": 1200,
 
     "name": "a cracked mirror",
 
@@ -23,7 +23,7 @@ item_mirror = {
 item_photo = {
     "id": "photo",
 
-    "mass": 2500,
+    "mass": 800,
 
     "name": "an old, faded photograph",
 
@@ -34,7 +34,7 @@ item_photo = {
 item_note = {
     "id": "note",
 
-    "mass": 250,
+    "mass": 200,
 
     "name": "a handwritten note",
 
@@ -55,7 +55,7 @@ item_diary = {
 item_coffin = {
     "id": "coffin",
 
-    "mass": 200,
+    "mass": 2800,
     
     "name": "a child-sized coffin",
 
@@ -65,7 +65,7 @@ item_coffin = {
 item_doll = {
     "id": "doll",
 
-    "mass": 250,
+    "mass": 750,
     
     "name": "a child's toy doll",
 
@@ -75,7 +75,7 @@ item_doll = {
 item_musket = {
     "id": "musket",
 
-    "mass": 250,
+    "mass": 800,
     
     "name": "a dusty musket",
 
@@ -85,7 +85,7 @@ item_musket = {
 item_musicbox = {
     "id": "musicbox",
 
-    "mass": 250,
+    "mass": 1650,
     
     "name": "a wind-up music box",
 
@@ -95,7 +95,7 @@ item_musicbox = {
 item_dress = {
     "id": "dress",
 
-    "mass": 250,
+    "mass": 1500,
     
     "name": "a lacy wedding dress",
 
@@ -105,7 +105,7 @@ item_dress = {
 item_plant = {
     "id": "plant",
 
-    "mass": 250,
+    "mass": 600,
     
     "name": "a plant",
 
@@ -115,7 +115,7 @@ item_plant = {
 item_hand = {
     "id": "hand",
 
-    "mass": 250,
+    "mass": 1100,
     
     "name": "a pickled hand in a jar",
 
@@ -125,7 +125,7 @@ item_hand = {
 item_whiskey = {
     "id": "whiskey",
 
-    "mass": 250,
+    "mass": 500,
     
     "name": "a flask of whiskey",
 

@@ -15,7 +15,7 @@ room_cellar = {
     "name": "Cellar",
 
     "description":
-    """You finally make it down the creaky stairs to the cellar. Some  old-wooden barrels which were used by the family for making homemade wine. After all these years they are still full... of rats and bones.
+    """You finally make it down the creaky stairs to the cellar. There are some old, wooden barrels which were used by the family for making homemade wine. After all these years they are still full... of rats and bones.
 """,
 
     "exits":  {"up": "Entrance", "west": "Closet"},
@@ -27,7 +27,7 @@ room_closet = {
     "name": "Storage Closet",
 
     "description":
-    """As you walk in you feel something quickly brush past you. You turn around and see it was a rat. In this room, there aren’t many items, it's filled cobwebs and what look like small insect hives. But you see blood stains on a shelf next to an empty scythe case.
+    """As you walk in you feel something quickly brush past you. You turn around and see it was a rat. In this room there aren't many items; it's filled with cobwebs and what look like small insect hives. But you see blood stains on a shelf next to an empty scythe case.
 """,
 
     "exits": {"east": "Cellar"},
@@ -95,7 +95,7 @@ room_landing = {
     "name": "Landing",
 
     "description":
-    "As you step on to the landing you hear the floor creak and feel the floorboards lower as you put your weight on them, it doesn't seem very stable. There is a hole in the floor ahead of you. You look down into it and can vaguely see a foot lying at one end at the bottom of the hole.",
+    "As you step on to the landing you hear the floor creak and feel the floorboards lower as you put your weight on them, it doesn't seem very stable. There is a hole in the floor ahead of you. You look down into it and can vaguely see a disembodied foot lying at one end at the bottom of the hole.",
 
     "exits": {"up": "Attic", "north": "Master", "east": "Spare", "west": "Bathroom", "down": "Entrance"},
 
@@ -117,7 +117,7 @@ room_master = {
     "name": "Master Bedroom",
 
     "description":
-    """Cobwebs hang in every corner and drape themselves across the bed like a blanket.""",
+    """Cobwebs hang in every corner and drape themselves across the bed like a blanket. The four poster bed was probably at some point luxurious, now it is creaking and cracked at the base.""",
 
     "exits": {"south": "Landing"},
 
@@ -125,10 +125,10 @@ room_master = {
 }
 
 room_spare = {
-    "name": "Spare",
+    "name": "Spare Room",
 
     "description":
-    """This large, sound proof room was multi-purpose, many things could have been done in here, but it looks like everything that was in here has been removed.""",
+    """This large room with thick walls was multi-purpose, many things could have been done in here, but it looks like everything that was in here has been removed.""",
 
     "exits": {"west": "Landing"},
 
@@ -139,7 +139,7 @@ room_bath = {
     "name": "Bathroom",
 
     "description":
-    """A bloody, cracked mirror is the first thing you see as you enter. The curtains are covered in blood and cut in half while the bath tub is broken. A serious fight must have occurred in here!""",
+    """A bloody, cracked mirror is the first thing you see as you enter. The curtains are covered in blood and ripped in half while the bath is overflowing, the tap unable to be turned off. A serious fight must have occurred in here!""",
 
     "exits": {"east": "Landing"},
 

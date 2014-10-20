@@ -25,10 +25,10 @@ item_photo = {
 
     "mass": 800,
 
-    "name": "an old, faded photograph",
+    "name": "an old, framed photograph",
 
     "description":
-    "The photograph has a picture of a man in a suit, smiling. It has stains on it and has faded a lot. You turn it around and see some writing, it says, 'Nolite te bastardes carborandorum' which translates to, 'Don’t let the bastard grind you down'"
+    "The photograph has a picture of a man in a suit, smiling. It has stains on it and has faded a lot. You turn it around and see some writing, it says: 'Nolite te bastardes carborandorum' which translates to 'Don't let the bastard grind you down'"
 }
 
 item_note = {
@@ -39,7 +39,7 @@ item_note = {
     "name": "a handwritten note",
 
     "description":
-    "You look at the note, handwritten in blood on old parchment, but it’s all in Latin. You read all of it without understanding anything apart from 'maleficis'... 'Witches'."
+    "You look at the note, handwritten in either red ink or worse... on old parchment, but it's all in Latin. You read all of it without understanding anything apart from 'maleficis'... 'Witches'."
 }
 
 item_diary = {
@@ -49,7 +49,7 @@ item_diary = {
 
     "name": "a leather-bound diary",
 
-    "description": "This belonged to the wife that lived here. The husband tried to burn it in the past because he thought that she hid things in it. Although, it seems that there was a page ripped out."
+    "description": "This belonged to the wife that lived here. The cover is charred, as if it has been thrown in the fire at some point. Perhaps someone thought her secrets were too much for this world. Although, it seems that there was a page ripped out."
 }
 
 item_coffin = {
@@ -59,7 +59,7 @@ item_coffin = {
     
     "name": "a child-sized coffin",
 
-    "description": "You pick up the coffin and it feels heavy. As you hold it in your arms, you vaguely feel a kick and can hear crying."
+    "description": "You pick up the coffin and it feels heavy. As you hold it in your arms, you vaguely feel a kick and if you lean in close enough you swear you can hear the muffled cry of a young child through the wood. You will not open it."
 }
 
 item_doll = {
@@ -69,7 +69,7 @@ item_doll = {
     
     "name": "a child's toy doll",
 
-    "description": "A motionless doll with alabaster skin and perfect ringlets seems to follow you with her glass eyes."
+    "description": "A motionless doll with alabaster skin and perfect blonde ringlets seems to follow you around the room with her unblinking glass eyes and perpetual half smile."
 }
 
 item_musket = {
@@ -119,7 +119,7 @@ item_hand = {
     
     "name": "a pickled hand in a jar",
 
-    "description": "A wrinkled human hand. You can see  the veins and tendons move as it twitches ever so slightly."
+    "description": "An old, wrinkled human hand, going slightly green from the liquid. You can see the veins and tendons move as it twitches ever so slightly."
 }
 
 item_whiskey = {
@@ -129,7 +129,7 @@ item_whiskey = {
     
     "name": "a flask of whiskey",
 
-    "description": "350ml of Chivas Regal... a tough old blended Scotch and clearly the master's favourite. It helps you confront fear... You could have done with this a few days ago."
+    "description": "350ml of Chivas Regal... a tough old blended Scotch and probably the master's favourite. It helps you confront fear... You could have done with this a few days ago."
 }
 
 items = {

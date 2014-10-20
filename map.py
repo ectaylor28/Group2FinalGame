@@ -27,7 +27,7 @@ room_closet = {
     "name": "Storage Closet",
 
     "description":
-    """As you walk in you feel something quickly brush past you. You turn around and see it was a rat. In this room, there aren’t many items, it’s filled cobwebs and what look like small insect hives. But you see blood stains on a shelf next to an empty scythe case.
+    """As you walk in you feel something quickly brush past you. You turn around and see it was a rat. In this room, there aren’t many items, it's filled cobwebs and what look like small insect hives. But you see blood stains on a shelf next to an empty scythe case.
 """,
 
     "exits": {"east": "Cellar"},
@@ -73,7 +73,7 @@ room_vegetable = {
     "name": "Vegetable Garden",
 
     "description":
-    """There are many different plants here, all of them dying. But one particular plant stands out, it’s thorny and has a skull on the pot.""",
+    """There are many different plants here, all of them dying. But one particular plant stands out, it's thorny and has a skull on the pot.""",
 
     "exits": {"south": "Kitchen", "north": "Shed"},
 
@@ -95,7 +95,7 @@ room_landing = {
     "name": "Landing",
 
     "description":
-    """As you step on to the landing you hear the floor creak and feel the floorboards lower as you put your weight on them, it doesn’t seem very stable. There is a hole in the floor ahead of you. You look down into it and can vaguely see a foot lying at one end at the bottom of the hole.""",
+    "As you step on to the landing you hear the floor creak and feel the floorboards lower as you put your weight on them, it doesn't seem very stable. There is a hole in the floor ahead of you. You look down into it and can vaguely see a foot lying at one end at the bottom of the hole.",
 
     "exits": {"up": "Attic", "north": "Master", "east": "Spare", "west": "Bathroom", "down": "Entrance"},
 

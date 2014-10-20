@@ -89,7 +89,7 @@ item_musicbox = {
     
     "name": "a wind-up music box",
 
-    "description": "The music box, when open, plays a sweet lullaby that used to put a baby to sleep. Of course it has no use now, she’s not going to wake up again."
+    "description": "The music box, when open, plays a sweet lullaby that used to put a baby to sleep. Of course it has no use now, she's not going to wake up again."
 }
 
 item_dress = {

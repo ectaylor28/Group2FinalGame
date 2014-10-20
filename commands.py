@@ -8,7 +8,7 @@ commands_for_exit = ["exit", "quit", "q", "bye"]
 commands_for_task = ["task"]
 commands_for_look = ["look"]
 commands_for_look_at = ["lookat", "examine"]
-commands_for_moves = ["moves"]
+commands_for_time = ["time"]
 
 commands = [
 	commands_for_go,
@@ -19,7 +19,7 @@ commands = [
 	commands_for_look,
 	commands_for_look_at,
 	commands_for_task,
-	commands_for_moves
+	commands_for_time
 ]
 
 function_dict = {
@@ -31,5 +31,5 @@ function_dict = {
 	"task": execute_task,
 	"look": execute_look,
 	"lookat": execute_look_at,
-	"moves": execute_moves
+	"time": execute_moves
 }

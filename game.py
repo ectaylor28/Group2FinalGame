@@ -3,6 +3,7 @@
 from map import rooms
 import os
 import sys
+import string
 from player import *
 from items import *
 from commands import *
@@ -87,7 +88,7 @@ def print_inventory_items(items):
     print()
 
 def exit_game():
-    print("\nBye\n")
+    print("\nThank you for playing!\n")
     sys.exit(1)
 
 def print_room(room):
@@ -175,7 +176,7 @@ def print_exit(direction, leads_to):
     >>> print_exit("south", "Robs' room")
     GO SOUTH to Robs' room.
     """
-    print("GO " + direction.upper() + " to " + leads_to + ".")
+    print("GO " + direction.upper() + " to the " + leads_to + ".")
 
 
 def print_menu(exits, room_items, inv_items):
@@ -266,22 +267,26 @@ def execute_go(direction):
         else:
             print("\nYou cannot go there.\n")
     else:
-        print("\nSorry, You have run out ot moves. Game over!\n")
+        print("\nSorry, You have run out of time. Game over!\n")
         sys.exit(1) 
 
         
 def execute_look():  
     if current_room["name"] == goal_room[1]["name"] and check_for_item(goal_item, current_room["items"]):
-        print("\nCongratulations, You won!\n")
+        print("\nThere is a shriek from outside the house, so persistent that you cover your ears to block out the noise.")
+        print("\n'YOU FOOL!' the woman's voice yells, delighted. 'You don't even know what you've done!'")
+        print("\nAnd then that laugh again, 'Leave, LEAVE!' she continues to cackle. 'If all goes to plan, you won't last long out there now anyway...'")
+        print("\nYou don't need to be told twice. The front door swings open and you sprint until her laughs are indistinguishable from the sounds of the dark night.")
+        print("\nCONGRATULATIONS, YOU ESCAPED!")
         sys.exit(1) 
 
-    os.system('clear')  
+    os.system('cls')  
     print_room(current_room)
     print_inventory_items(inventory)
     print_menu(current_room["exits"], current_room["items"], inventory)
 
 def execute_moves():
-    print("\nYou " + str(movement_limit) + " movements left. Good luck.\n")
+    print("\nYou have " + str(movement_limit) + " minutes left. Good luck.\n")
     
 def execute_look_at(item_id):
     boolean = False
@@ -306,7 +311,7 @@ def execute_look_at(item_id):
 
 
 def execute_task():
-    print("\nYou have to bring the " + str(goal_item[0]) + " to " + str(goal_room[1]["name"]) + ".\n")
+    print("\nYou have to bring the " + str(goal_item[0]) + " to the " + str(goal_room[1]["name"]) + ".\n")
 
 
 def find_command(command):
@@ -422,6 +427,27 @@ def move(exits, direction):
 # This is the entry point of our program
 def main():
     
+    os.system("cls")
+    print("ESCAPE FROM HORROR HOUSE!")
+    print()
+    print("At any time you may type...")
+    print("TASK to see your current task.")
+    print("INV to see your current inventory.")
+    print("TIME to see your time remaining.")
+    print("EXAMINE + ITEM NAME to look closely at an item")
+    print()
+    print("Use the GO, TAKE and DROP commands to move around and interact.")
+    print()
+    print("==============================")
+    print("\nYou stand alone, tired and broken. You haven't eaten in two days. You know now that you should never have come to the abandoned house on the top of Watching Witch's Hill...")
+    print("\nA woman lurks in the shadows, seemingly appearing and disappearing at will. You cannot see her face, only the cold shiver down your spine lets you know she's there.")
+    print("\nThe hairs on the back of your neck stand on end. 'Please, let me go,' you beg, voice cracking feebly.")
+    print("\nShe laughs the kind of laugh that seems to resonate through your bones. 'But I have one more treat in store for you...'")
+    print("\nHer idea of a 'treat' is surely incompatible with your own, but you say nothing...")
+    print("\n'Fetch me something from inside the house... I'll give you twelve minutes and then maybe we can see about reuiniting you with your pathetic little friends...'")
+    print()
+    print("==============================")
+    input("\nPress <Enter> to Begin... if you dare!")
     execute_look()
     # Main game loop
     while True:

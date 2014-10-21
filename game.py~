@@ -385,12 +385,13 @@ def execute_command(command):
                 function_dict[temp](inventory)
             elif temp == "task":
                 function_dict[temp]()
-            elif temp == "time":
+            elif temp == "moves":
                 function_dict[temp]()
             elif len(command) > 1:
+		print("A")
                 function_dict[temp](command[1])
             else:
-                print("\nBe more specific.\n")
+                function_dict[temp]()
         else:
             print("\nThis makes no sense.\n")
     else:

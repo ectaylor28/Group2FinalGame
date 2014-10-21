@@ -3,7 +3,7 @@
 from map import rooms
 import os
 import sys
-import string
+import time
 from player import *
 from items import *
 from commands import *
@@ -267,7 +267,15 @@ def execute_go(direction):
         else:
             print("\nYou cannot go there.\n")
     else:
-        print("\nSorry, You have run out of time. Game over!\n")
+        print("\n'HAHAHAHAHA!!'\n")
+        time.sleep(2)
+        print("\n The witch's laughter echoes through the empty house. \n")
+        print("\n 'You didn't complete my task quickly enough!'\n")
+        time.sleep(2)
+        print("\n*CREAK* The door closes behind you...\n")
+        time.sleep(2)
+        print("\n*BANG* And the whole house goes dark...\n")
+        time.sleep(2)
         sys.exit(1) 
 
         
@@ -444,7 +452,7 @@ def main():
     print("\nThe hairs on the back of your neck stand on end. 'Please, let me go,' you beg, voice cracking feebly.")
     print("\nShe laughs the kind of laugh that seems to resonate through your bones. 'But I have one more treat in store for you...'")
     print("\nHer idea of a 'treat' is surely incompatible with your own, but you say nothing...")
-    print("\n'Fetch me something from inside the house... I'll give you twelve minutes and then maybe we can see about reuiniting you with your pathetic little friends...'")
+    print("\n'Fetch me something from inside the house... I'll give you TEN MINUTES and then maybe we can see about reuiniting you with your pathetic little friends...'")
     print()
     print("==============================")
     input("\nPress <Enter> to Begin... if you dare!")

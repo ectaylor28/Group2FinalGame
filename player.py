@@ -2,7 +2,7 @@ from items import *
 from map import rooms
 
 inventory = [item_knife, item_whiskey]
-movement_limit = 12
+movement_limit = 10
 
 # Game goals
 goalr = rooms.copy()

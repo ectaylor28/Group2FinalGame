@@ -6,7 +6,7 @@ commands_for_drop = ["drop", "leave", "throw", "remove"]
 commands_for_inventory = ["inventory", "inv"]
 commands_for_exit = ["exit", "quit", "q", "bye"]
 commands_for_task = ["task"]
-commands_for_look = ["look", "view"]
+commands_for_look = ["look"]
 commands_for_look_at = ["lookat", "examine", "show", "use"]
 commands_for_time = ["time", "timer", "moves"]
 

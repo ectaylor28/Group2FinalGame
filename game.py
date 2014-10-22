@@ -288,7 +288,7 @@ def execute_look():
         print("\nCONGRATULATIONS, YOU ESCAPED!\n")
         sys.exit(1) 
 
-    os.system('clear')  
+    os.system('cls')  
     print_room(current_room)
     print_inventory_items(inventory)
     print_menu(current_room["exits"], current_room["items"], inventory)
@@ -435,7 +435,7 @@ def move(exits, direction):
 # This is the entry point of our program
 def main():
     
-    os.system("clear")
+    os.system("cls")
     print("ESCAPE FROM HORROR HOUSE!")
     print()
     print("At any time you may type...")
